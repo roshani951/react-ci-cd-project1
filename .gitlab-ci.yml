@@ -1,0 +1,13 @@
+echo stages:^
+ - build^
+ - deploy^
+^
+build-job:^
+ stage: build^
+ script:^
+  - echo "Building the project..."^
+^
+deploy-job:^
+ stage: deploy^
+ script:^
+  - echo "Deploying the project..." > .gitlab-ci.yml
